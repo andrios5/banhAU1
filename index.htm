@@ -15,9 +15,9 @@
     </header>
         <nav>
             <a href="#">Artigos</a>
-            <a href="#">Loja</a>
+            <a href="loja.htm">Loja</a>
             <a href="#">Agendamentos</a>
-            <a href="#">Contato</a>
+            <a href="contatos.htm">Contato</a>
         </nav>
     
         <main>
@@ -58,7 +58,8 @@
                             <label for="horario">Horário:</label>
                             <input type="time" name="horario" id="horario">
                         </div>
-                        <div><button type="submit" id="agendar">Agendar</button></div>
+                        <div><button type="submit" onclick="agenda()" id="agendar">Agendar</button></div>
+                       
                     </form>
                 </aside>
                 
@@ -77,13 +78,15 @@
             </article>
         </main>
         <footer>
-            <p>Site desenvolvido por Andrios</p>
+            <p>Site desenvolvido por Luana</p>
         </footer>
 
         
 
 </body>
 <script>
+    
+
     var myIndex = 0;
     carousel();
     
@@ -112,6 +115,10 @@
       if (myIndex2 > b.length) {myIndex2 = 1}    
       b[myIndex2-1].style.display = "block";  
       setTimeout(carousel2, 2000); // Change image every 2 seconds
+    }
+
+    function agenda() {
+        alert('Banho agendado com sucesso');
     }
 </script>
 </html>
